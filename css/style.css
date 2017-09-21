@@ -33,11 +33,12 @@ body {
 .jumbotron {
 	background: #354556;
 	margin-bottom: 0;
-	padding-top: 65px;
-	padding-bottom: 45px;
+	padding-top: 85px;
+	padding-bottom: 85px;
 }
 
 .jumbotron h1 {
+	margin-bottom: 20px;
 	color: #fff;
 	font: 100 60px "Lato", sans-serif;
 
@@ -46,7 +47,7 @@ body {
 	color: #a5b6c7;
 	font: 100 24px "Lato", sans-serif;
 	margin-top: 10px;
-	margin-bottom: 15px;
+	margin-bottom: 35px;
 	}
 .btn.btn-default {
 	background-color: transparent;
@@ -129,14 +130,7 @@ footer a {
 footer a:hover {
 	color: #7f8e9c;
 }
-/*.footer-links {
 
-	vertical-align: top;
-}
-.logo-foot {
-	display: flex;
-	justify-content: space-around;
-}*/
 .logo-footer {
 	background: url(../images/logo-footer.png);
 	width: 192px;
