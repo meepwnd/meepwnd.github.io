@@ -1,0 +1,745 @@
+@import 'bootstrap'
+
+// BASE STYLES
+.text-primary 
+	color: #4c76ff
+.bg-primary
+	background: #4c76ff
+.divider
+	width: 229px
+	height: 14px
+	margin: 0 auto
+	background: url(../images/divider1.png)
+.divider2
+	width: 170px
+	height: 10px
+	margin: 0 auto
+	background: url(../images/divider2.png)
+h3 
+	color: #4c76ff
+	font-size: 28px
+	font-weight: 900
+	letter-spacing: -0.02em
+	text-transform: uppercase
+	text-align: center
+	
+body 
+	position: relative
+	background: #fff
+	font-family: Lato, "Open Sans", sans-serif
+	
+// NAVBAR
+.navbar-inverse 
+	color: #fff
+	background: rgba(16,22,54,0.3)
+	font-family:  Lato, "Open Sans", sans-serif
+	transition: all .5s
+	&.scroll
+		background: rgba(16,22,54,1)
+	.navbar-header 
+		clear: both
+	.navbar-brand 
+		display: inline-block
+		float: none
+		padding: 24px 0 0 12px
+
+		color: #fff
+		font-size: 20.8px 
+		font-weight: 900
+		letter-spacing: 0.05em
+		@media (min-width: 768px)
+			float: left
+		
+	.tagline
+		display: none
+		padding-top: 27px
+		margin-left: 27px
+		float: right
+
+		color: #fff
+		opacity: .2
+
+		font-size: 14px
+		font-weight: 300
+		letter-spacing: 0.05em
+		span 
+			margin-right: 16px
+			color: #32b0ee
+		@media (min-width: 768px)
+			display: inline-block
+			
+
+			
+	// navbar menu
+	.navbar-nav>li>a 
+		padding: 23px 0 0 0
+		margin-right: 30px
+
+		color: #fff
+		font-size: 12px
+		font-weight: 300
+		letter-spacing: .05em
+		&:hover 
+			@media (min-width: 768px)
+				padding-top: 22px
+				border-top: 1px solid #fff
+	.navbar-nav>li:last-of-type>a 
+		margin-right: 6px
+	.navbar-nav>.active>a, .navbar-nav.active>a:hover, .navbar-nav.active>a:focus
+		background: transparent!important
+		@media (min-width: 768px)
+			padding-top: 22px
+			
+			border-top: 1px solid #fff
+	.navbar-toggle:hover, .navbar-toggle:focus
+		background: #4c76ff
+// HERO SECTION
+.hero
+	padding: 233px 0 92px
+	color: #fff
+	background: url(../images/hero_bg.jpg)
+	@media (min-width: 768px)
+		padding: 283px 0 112px
+	h1 	
+		padding-bottom: 5px
+		font-size: 62px
+		font-weight: 900
+		span 
+			font-size: 40px
+	h2 
+		margin-left: 6px
+		padding-bottom: 24px
+
+		font-size: 48px
+		font-weight: 100
+	p 
+		position: relative
+		display: inline-block
+		margin-left: 5px
+		padding-bottom: 109px
+
+		font-size: 18px
+		font-weight: 100
+		&::before, &::after
+			display: none
+			position: absolute
+			top: 10px
+			content: ''
+			width: 27px
+			height: 1px
+			background: #4c76ff
+			@media (min-width: 768px)
+				display: block
+				
+		&::before 
+			left: -67px
+		&::after 
+			right: -67px
+	.social
+		a 
+			display: inline-block
+			width: 25px
+			height: 25px
+			margin-left: 3px
+		.social-twitter
+			display: inline-block
+			width: 20px
+			height: 16px
+			background: url(../images/spritesheet.png) no-repeat -295px -112px
+		.social-facebook
+			display: inline-block
+			width: 10px
+			height: 18px
+			background: url(../images/spritesheet.png) no-repeat -351px -5px
+		.social-google
+			display: inline-block
+			width: 18px
+			height: 18px
+			background: url(../images/spritesheet.png) no-repeat -351px -62px
+		.social-dribbble
+			display: inline-block
+			width: 20px
+			height: 20px
+			background: url(../images/spritesheet.png) no-repeat -5px -112px
+
+// FEATURES SECTION
+.features 
+	padding: 74px 0 86px
+	background: #efefef
+	h3 
+		margin-bottom: 21px
+	&-inner 
+		padding-top: 75px
+		.features-branding
+			padding-bottom: 30px
+			&_icon
+				position: absolute
+				display: inline-block
+				top: 3px
+				width: 34px
+				height: 34px
+				background: url(../images/spritesheet.png) no-repeat -200px -5px
+		.features-development
+			padding-bottom: 30px
+			&_icon
+				@extend .features-branding_icon
+				background: url(../images/spritesheet.png) no-repeat -49px -49px
+		.features-consulting
+			padding-bottom: 30px
+			&_icon
+				@extend .features-branding_icon
+				background: url(../images/spritesheet.png) no-repeat -5px -49px
+		h5 
+			margin-left: 50px
+			margin-bottom: 13px
+			color: #062033
+			font: 700 16.78px "Open Sans", sans-serif
+		p 
+			margin-left: 50px
+			color: #062033
+			font: 10.91px/17.62px "Open Sans", sans-serif
+			
+// THIRD SECTION
+.third-section
+	padding: 77px 0 21px
+	@media (min-width: 768px)
+		padding-bottom: 52px
+	.container 
+		position: relative
+		// large image
+		.mobile-bg 
+			display: none
+			position: absolute			
+			@media (min-width: 768px)
+				display: block
+				top: 50%
+				left: 50%
+				width: 183px
+				height: 388px				
+				margin-left: -91px
+				margin-top: -94px
+				background: url(../images/mobile1.png)
+				background-size: contain
+			@media (min-width: 1020px)
+				top: 124px
+				left: 36.8%
+				width: 261px
+				height: 554px
+				margin: 0
+					
+	h5 
+		margin-bottom: 80px
+		font: 15.08px/30.15px "Open Sans", sans-serif
+		@media (min-width: 768px)
+			margin-bottom: 110px		
+	h6 
+		padding: 15px 0 0 71px
+		margin-bottom: 10px
+		color: #282528
+		font: 900 13.4px "Open Sans", sans-serif
+	p 	
+		padding: 0 10px 8px 71px
+		color: #282528
+		font: 10.89px/20.1px "Open Sans", sans-serif
+	.customize, .support, .time, .send, .music, .camera
+		 margin-bottom: 39px
+		 @media (min-width: 768px)
+		 	margin-bottom: 59px
+	.customize 
+		span
+			position: absolute
+			display: inline-block
+			top: 16px
+			left: 13px
+			width: 30px
+			height: 31px
+			background: url(../images/spritesheet.png) no-repeat -160px -5px
+	.support 
+		@media (min-width: 768px)
+			h6 
+				padding-left: 85px
+			p 
+				padding-left: 85px
+		span
+			position: absolute
+			display: inline-block
+			top: 18px
+			left: 13px
+			width: 28px
+			height: 27px
+			background: url(../images/spritesheet.png) no-repeat -200px -49px
+			@media (min-width: 768px)
+				left: 28px
+	.time 
+		span
+			position: absolute
+			display: inline-block
+			top: 14px
+			left: 14px
+			width: 29px
+			height: 30px
+			background: url(../images/spritesheet.png) no-repeat -200px -86px
+	.send 
+		@media (min-width: 768px)
+			h6 
+				padding-left: 85px
+			p 
+				padding-left: 85px
+		&-inner 
+			background: #fefce9
+		span
+			position: absolute
+			display: inline-block
+			top: 17px
+			left: 13px
+			width: 29px
+			height: 28px
+			background: url(../images/spritesheet.png) no-repeat -219px -126px
+			@media (min-width: 768px)
+				left: 29px
+	.music 
+		span
+			position: absolute
+			display: inline-block
+			top: 16px
+			left: 14px
+			width: 27px
+			height: 31px
+			background: url(../images/spritesheet.png) no-repeat -258px -112px
+	.camera 
+		@media (min-width: 768px)
+			h6 
+				padding-left: 85px
+			p 
+				padding-left: 85px
+		span
+			position: absolute
+			display: inline-block
+			top: 20px
+			left: 13px
+			width: 30px
+			height: 23px
+			background: url(../images/spritesheet.png) no-repeat -219px -164px
+			@media (min-width: 768px)
+				left: 28px
+// WORKS
+.works
+	padding-top: 74px
+	h3 
+		padding-bottom: 21px
+	h5 
+		margin-top: 41px
+		
+		color: #062033
+		font: 300 14px/22.75px "Lato", "Open Sans", sans-serif
+		letter-spacing: 0.004em
+		@media (min-width: 768px)
+			padding: 0 40px
+			line-height: 17.75px
+	.flex-container
+		display: flex
+		margin-top: 72px
+		.nav.nav-tabs 
+			display: flex
+			justify-content: center
+			flex-wrap: wrap
+			margin: 0 auto
+			li 
+				margin-bottom: 10px
+
+	.tab-content 
+		margin-top: 70px
+		.tab-pane 
+			max-width: 1170px
+			margin: 0 auto
+		.col-3 
+			display: inline-block
+			width: 100%
+			@media (min-width: 576px)
+				width: 50%
+			@media (min-width: 768px)
+				width: 25%				
+		img 
+			width: 100%
+			height: auto		
+	
+			
+
+// TEAM
+.team 
+	padding-top: 102px  
+	padding-bottom: 66px
+	h3 
+		margin-bottom: 21px
+	h6 
+		margin-top: 50px
+		color: #062033
+		font: 300 14.96px/19.95px "Lato", "Open Sans", sans-serif
+	&-gallery 
+		padding-top: 100px
+		figure 
+			margin-bottom: 40px
+			.img-container
+				position: relative
+				// overlays on hover
+				.overlay1, .overlay2
+					position: absolute
+					bottom: 100%
+					left: 0
+					right: 0
+					width: 100%
+					height: 0
+					background: rgba(76,118,255,0.95)
+					overflow: hidden
+					transition: .5s ease
+					p 
+						color: #fff
+						font: 13.27px/20px "Open Sans", sans-serif
+						&:first-of-type
+							padding: 45px 20px 7px
+							font-weight: 700
+							@media (min-width: 768px)
+								padding-top: 15px
+						&:last-of-type
+							padding: 30px 20px 
+							@media (min-width: 768px)
+								padding: 0 20px
+					.social 
+						display: flex
+						justify-content: center
+						margin-top: 53px
+						a 
+							display: flex
+							justify-content: center
+							align-items: center
+							width: 35px
+							height: 35px
+							margin: 0 2px
+							background: #3552b2
+							.social-twitter 
+								width: 18px
+								height: 16px
+								display: inline-block
+								background: url(../images/spritesheet.png) no-repeat -351px -90px
+							.social-facebook
+								width: 9px
+								height: 19px
+								display: inline-block
+								background: url(../images/spritesheet.png) no-repeat -351px -33px
+							.social-google
+								width: 19px
+								height: 19px
+								display: inline-block
+								background: url(../images/spritesheet.png) no-repeat -35px -112px
+				.overlay2 
+					bottom: 0
+					top: 100%
+				&:hover .overlay1
+					bottom: 0
+					height: 100%
+				&:hover .overlay2
+					top: 0
+					height: 100%
+			img 
+				display: block
+				width: 100%
+				height: auto
+			figcaption 
+				margin-top: 14px
+				h6 
+					margin-top: 0
+					margin-bottom: 3px
+					color: #062033
+					font: 500 14.93px/19.91px "Open Sans", sans-serif				
+				p
+					color: #062033
+					font: 10.78px/19.91px "Open Sans", sans-serif
+
+// FACTS
+.facts 
+	padding-top: 69px
+	padding-bottom: 49px
+	color: #fff
+	background: url(../images/fun_bg.jpg)
+	background-size: cover
+	text-align: center
+	text-transform: uppercase
+	h3 
+		margin-bottom: 14px
+		font: 900 20.91px "Lato", "Open Sans", sans-serif
+	&-inner 
+		padding-top: 19px
+		.col-sm-3
+			margin-bottom: 40px
+		h2
+
+			font: 500 44.8px "Open Sans", sans-serif
+		p 
+			margin-top: -3px
+			margin-bottom: 26px
+			font: 13.44px "Open Sans", sans-serif
+		&_hours-icon 
+			display: inline-block
+			width: 97px
+			height: 97px
+			margin-bottom: 21px
+			background: url(../images/spritesheet.png) no-repeat -244px -5px
+		&_clients-icon
+			@extend .facts-inner_hours-icon 
+			background: url(../images/spritesheet.png) no-repeat -93px -46px
+		&_projects-icon
+			@extend .facts-inner_hours-icon 
+			background: url(../images/spritesheet.png) no-repeat -5px -153px
+		&_awards-icon
+			@extend .facts-inner_hours-icon 
+			background: url(../images/spritesheet.png) no-repeat -112px -153px
+
+// CONTACT
+.contact 
+	padding-top: 74px
+	padding-bottom: 85px
+	h3 
+		margin-bottom: 21px
+	h5 
+		padding-top: 48px
+		font: 300 18px/24px "Lato", "Open Sans", sans-serif
+	.row
+		margin-top: 24px
+	&-address 
+		h5 
+			padding-left: 5px
+			margin-bottom: 26px
+			color: #062033
+			font: 18.35px/26.7px "Open Sans", sans-serif	
+		address 
+			font: 10.84px/20.02px "Open Sans", sans-serif
+			padding-left: 5px
+	// contact form
+	&-form 
+		margin-top: 45px
+		h4
+			margin-left: 7px
+			color: #062033
+			font: 900 20.02px "Open Sans", sans-serif
+		form 
+			padding-top: 22px
+			// clearfix
+			&::after 
+			    content: ""
+			    clear: both
+			    display: table
+			
+			input, textarea
+				padding: 14px 0
+				
+				border: none
+				border-bottom: 2px solid #e7e7e7
+				outline: none
+
+				color: #5b646e
+				font: 10.84px "Open Sans", sans-serif
+				
+				transition: border .4s
+				@media (min-width: 768px)
+					margin-left: 7px
+				&:focus 
+					border-bottom: 2px solid #3552b2
+			input[type=text]
+				width: 100%
+				margin-bottom: 20px
+				@media (min-width: 1020px)
+					margin-right: 6px
+					max-width: 310px
+			input[type=email]
+				width: 100%
+				margin-bottom: 20px
+				@media (min-width: 1020px)
+					max-width: 308px
+			textarea
+				box-sizing: border-box
+				margin-bottom: 20px
+				width: 100%
+				padding: 14px 0 0 0
+				resize: none
+				@media (min-width: 1020px)
+					width: 98.5%
+			button
+				display: inline-block
+				float: right
+				width: 136px
+				height: 24px
+				margin-top: 23px
+
+				color: #000
+				background: transparent
+				border: none
+				font: 13.35px "Open Sans", sans-serif
+				@media (min-width: 1020px)
+					margin-top: 3px		
+				&:hover
+					text-decoration: underline
+				// prevent from shifting during click in mozila
+				&:active, &:focus 
+					padding: 0
+				// prevent from shifting during click in ie
+				&:active span, &:focus span
+					position: relative
+					top: 0
+					left: 0
+				img
+					margin-right: 7px
+	.social
+		&-list 
+			display: flex
+			align-items: center	
+			justify-content: center
+			margin-top: 58px
+			
+			@media (min-width: 768px)
+				display: block
+				margin-left: 17px
+			a
+				display: flex
+				align-items: center	
+				width: 26px
+				height: 26px
+				margin-bottom: 10.5px
+				margin-left: 15px
+				margin-right: 15px
+				
+						
+			&_behance 
+				display: inline-block
+				width: 22px
+				height: 14px
+				background: url(../images/spritesheet.png) no-repeat -5px -5px
+			&_twitter 
+				display: inline-block
+				width: 22px
+				height: 18px
+				background: url(../images/spritesheet.png) no-repeat -325px -116px
+			&_dribbble 
+				display: inline-block
+				width: 22px
+				height: 23px
+				background: url(../images/spritesheet.png) no-repeat -37px -5px
+			&_forrst 
+				display: inline-block
+				width: 19px
+				height: 22px
+				background: url(../images/spritesheet.png) no-repeat -99px -5px
+			&_google 
+				display: inline-block
+				width: 22px
+				height: 19px
+				background: url(../images/spritesheet.png) no-repeat -128px -5px
+// MAP
+#map 
+	width: 100%
+	height: 183px
+	h1 
+		display: none
+
+// FOOTER
+.footer
+	padding: 46px 15px 50px
+	background: #010305
+	
+	.company
+		h3 
+			
+			margin-bottom: 18px
+
+			color: #fff 
+			font: 900 26.72px "Lato", "Open Sans", sans-serif
+			text-transform: lowercase
+			letter-spacing: 0.05em
+			text-align: left 
+			@media (min-width: 768px)
+				padding-left: 64px
+		p 
+			
+			color: #fff
+			font: 300 12.41px/22.9px "Lato", "Open Sans", sans-serif
+			@media (min-width: 768px)
+				padding-left: 62px
+			
+	.subscribe 
+		h5
+			padding: 3px 0 35px 0
+			margin-top: 30px
+			color: #fff
+			font: 900 18px/21.61px "Lato", "Open Sans", sans-serif
+			@media (min-width: 768px)
+				padding-left: 64px
+			@media (min-width: 1020px)
+				margin-top: 0
+			
+		// subscribe form
+		form 
+			padding-left: 0
+			padding-bottom: 16px
+			@media (min-width: 768px)
+				padding-left: 64px
+		input[type=email]
+			float: left
+			width: 200px
+			height: 41px
+			padding-left: 10px
+
+			background: transparent
+			border: 2px solid #fff
+			border-right: none
+			border-top-left-radius: 3px
+			border-bottom-left-radius: 3px
+			outline: none	
+		button
+			height: 41px			
+			padding: 0 13.5px
+
+			border: 2px solid #fff
+			border-left: none
+			border-top-right-radius: 3px
+			border-bottom-right-radius: 3px
+			background-color: transparent 
+			// prevent from shifting during click in ie
+			&:active span, &:focus span
+				position: relative
+				top: 0
+				left: 0
+		p 
+			padding-left: 0
+			font: 11.7px/21.61px "Open Sans", sans-serif
+			color: #fff		
+			@media (min-width: 768px)
+				padding-left: 64px
+	.menu 
+		margin-top: 30px
+		@media (min-width: 1020px)
+				margin-top: 0
+		h5 
+			padding-left: 0
+			margin-top: 2px
+			margin-bottom: 25px
+
+			font: 900 18px "Lato", "Open Sans", sans-serif
+			color: #fff	
+			@media (min-width: 768px)
+				padding-left: 63px
+		ul 
+			display: inline-block
+			list-style: none
+			&:first-of-type
+				padding-left: 0
+				@media (min-width: 768px)
+					padding-left: 63px
+			&:last-of-type 
+				padding-left: 74px
+				@media (min-width: 768px)
+					padding-left: 34px
+			li 
+				color: #fff
+				font: 11.58px/28.5px "Open Sans", sans-serif
+				
+
+
