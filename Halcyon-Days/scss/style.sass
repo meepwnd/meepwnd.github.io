@@ -1,0 +1,554 @@
+@import 'slick/slick'
+@import 'slick/slick-theme'
+// BASE STYLES
+body
+	font-family: Lato, sans-serif
+
+img 
+    max-width: 100%
+    height: auto
+p 
+	font-size: 14px
+	font-weight: 400
+	line-height: 20px
+	letter-spacing: 0.10em
+	color: #8c9398
+h6 
+	font-weight: 700
+	letter-spacing: 0.22em
+.divider
+	max-width: 556px
+	height: 13px
+	margin: 0 auto
+	background: url(../images/divider.png) no-repeat
+	background-size: contain
+.divider-small
+	width: 33px
+	height: 3px
+	margin: 25px auto 25px
+	background: #3dc9b3
+.go-to 
+	display: inline-block
+	width: 44px
+	height: 44px
+	background: #3dc9b3
+	opacity: 0.7
+	border-radius: 50%
+	transition: opacity .2s
+	cursor: pointer
+	&:hover
+		opacity: 1
+
+:focus
+	outline: none
+
+.social 
+	display: flex
+	justify-content: center
+	margin: 0 auto
+	margin-bottom: 5px
+	a 
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 40px
+		height: 40px
+		margin: 5px
+		background: #242830
+		color: #fff
+		border-radius: 50%
+		position: relative
+		text-decoration: none
+		transition: all .2s
+		&:hover 
+			background: #3dc9b3
+
+// NAV MENU 
+.nav 
+	background: #242830
+	transition: all 2s
+	&-list 
+		display: none
+		
+		list-style: none
+		padding: 0
+		margin: 16px 0
+		li 
+			padding: 10px
+			border-bottom: 1px solid #8c9398
+			&:last-of-type 
+				border-bottom: none
+			a 
+				display: inline-block
+				width: 100%
+				color: #fff
+				&:hover 
+					color: #8c9398
+					text-decoration: none
+					
+// HERO
+.hero
+	background: #f7f7f9
+	background: url(../images/bg-hero.jpg) no-repeat
+	background-size: cover
+	.container
+		position: relative
+		padding: 238px 0 345px
+	h1
+		margin-bottom: 4px
+		letter-spacing: 0.39em
+		line-height: 1.5
+		span 
+			color: #a1a9b0
+	p
+		padding: 2px 0 40px
+		letter-spacing: 0.27em
+		line-height: 2.5
+		span 
+			font-weight: 900
+	.menu-icon 
+		position: absolute
+		top: 63px
+		right: 2px
+		margin-right: 15px
+		cursor: pointer
+		@media (min-width: 576px)
+			margin-right: 0
+		&:focus 
+			outline: dotted thin
+		span 
+			display: block
+			width: 27px
+			height: 5px
+			margin-bottom: 3px
+			background: #372c3c
+			transition: .2s
+		&.active 
+			.line1
+				transform: rotate(-45deg) translate(-7px, 7px)
+			.line2
+				opacity: 0
+			.line3
+				transform: rotate(45deg) translate(-4px, -5px)
+.btn-hero
+	display: inline-block
+	padding: 19px 37.5px
+	font-size: 15px
+	letter-spacing: 0.20em
+	color: #fff
+	background: #3dc9b3
+	border-radius: 6px
+	box-shadow: 0 3px #309383
+	&:hover
+		color: #fff
+		text-decoration: none
+		opacity: 0.9
+	&:active
+		transform: translate(0, 3px)
+		box-shadow: none
+
+.first-section
+	padding: 105px 0 104px
+	background: #f3f5f8
+	.divider 
+		margin-top: 25px
+	p 
+		padding-top: 58px
+		line-height: 30px
+
+.second-section
+	padding: 100px 15px 64px
+	.divider
+		margin-top: 24px
+	.row 
+		padding-top: 88px
+		h6 
+			padding-top: 50px
+			letter-spacing: 0.08em
+		p 
+			padding-bottom: 40px
+			letter-spacing: 0.08em
+
+.third-section
+	position: relative
+	@media (min-width: 992px)
+		height: 700px
+	.carousel-item 
+		margin-bottom: 168px
+	.img-mobile
+		display: none
+		width: 815px
+		height: 700px
+		
+		background: #f3f5f8
+		position: absolute
+		top: 0
+		right: 48.89%
+		padding: 0
+		@media (min-width: 992px)
+			display: block
+		.iphone 
+			background: url(../images/mobile.png)
+			background-repeat: no-repeat
+			background-position: 270px 70px
+			height: 100%
+			
+	.col-lg-5
+		padding-top: 131px 
+		padding-bottom: 107px
+		@media (min-width: 992px)
+			padding-bottom: 0
+		p 
+			letter-spacing: 0.07em
+			margin-bottom: 20px
+		.divider 
+			margin-top: 25px
+		p:nth-of-type(1) 
+			padding-top: 40px
+
+.fourth-section
+	padding-top: 74px
+	padding-bottom: 55px
+	background-image: url(../images/bg-counter.jpg)
+	background-size: cover
+	background-repeat: no-repeat
+	@media screen and (min-width: 768px)
+		background-attachment: fixed
+		background-position: center 
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+		background-attachment: scroll
+	h1 
+		letter-spacing: 0.315em
+		margin-bottom: 16px
+	h3 
+		font-size: 25px
+		font-weight: 300
+		letter-spacing: 0.38em
+		margin-bottom: 40px
+		span 
+			font-style: italic
+			font-weight: 400
+	.fa-angle-down 
+		transform: translate(0, 9px)
+		color: #fff
+		font-size: 27px
+		font-weight: 900
+
+.contact
+	background-image: url(../images/bg-subscribe.jpg)
+	background-size: cover
+	background-repeat: no-repeat
+	@media screen and (min-width: 768px)
+		background-attachment: fixed
+		background-position: center 
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+		background-attachment: scroll
+		
+	&-icon 
+		display: inline-block
+		width: 25px
+		height: 26px
+		background: url(../images/icon-email.png)
+
+.address
+	.address-icon 
+		display: inline-block
+		width: 12px
+		height: 18px
+		background: url(../images/icon-address.png)
+	.phone-icon 
+		@extend .address-icon
+		background: url(../images/icon-phone.png)
+	.email-icon 
+		display: inline-block
+		background: url(../images/icon-mail.png)
+		width: 15px
+		height: 16px
+
+.fifth-section
+	padding-top: 102px
+	padding-bottom: 97px
+	&.container 
+		padding-left: 0
+		padding-right: 0
+	.img-container
+		position: relative
+		cursor: pointer
+		img 
+			display: block
+			max-width: 100%
+			height: auto
+
+
+		.overlay 
+		 	position: absolute
+		 	top: 0
+		 	right: 0
+		 	bottom: 0
+		 	left: 0
+		 	width: 100%
+		 	height: 100%
+		 	background: rgba(61,201,179,0)
+		 	&-text 
+		 		padding-top: 12px
+		 		font-size: 15px
+		 		color: #fff
+		 		text-transform: uppercase
+		 		letter-spacing: 0.025em
+		 	.fa.fa-search 
+		 		padding-top: 20%
+		 		font-size: 30px
+		 		color: #fff
+
+		&:hover .overlay
+			background: rgba(61,201,179,0.7)
+
+	h6 
+		margin: 44px auto 16px
+	.divider-small
+		margin: 0 auto
+	p 
+		padding-top: 28px
+		padding-bottom: 49px
+		letter-spacing: 0.033em
+
+.six-section
+	padding: 64px 0 51px
+	background: #242830
+	h6 
+		padding: 29px 37px
+		display: inline-block
+		border: 1px solid #fff
+
+.container.team-section
+	padding-left: 0
+	padding-right: 0
+.team-section
+	padding-top: 85px
+	padding-bottom: 95px
+	.team-heading 
+		padding-bottom: 17px
+	.divider 
+		margin-bottom: 70px
+	.slick-slider
+		h6 
+			margin: 68px auto 16px
+		.divider-small 
+			margin: 0 auto
+		p 
+			padding-top: 28px
+			padding-bottom: 13px
+			letter-spacing: 0.03em
+	.social
+		margin-bottom: 79px
+
+.contact 
+	position: relative
+	padding-top: 122px
+	padding-bottom: 153px	
+	h6 
+		padding-top: 15px
+		padding-bottom: 37px
+	input[type=email]
+		// width: 354px
+		width: calc(100% - 150px)
+		max-width: 354px
+		height: 67px
+		padding-left: 15px
+		margin-right: 5px
+		color: #fff
+		background: transparent
+		font-size: 18px
+		border: 1px solid #fff
+	input[type=submit]
+		width: 99px
+		height: 67px
+		color: #fff
+		background: #3dc9b3
+		border: none
+		cursor: pointer
+		letter-spacing: 0.15em
+		&:hover
+			border: 1px solid #fff
+
+	.go-to.top 
+		position: absolute
+		bottom: -25px
+		left: 50%
+		width: 50px
+		height: 50px
+		margin-left: -25px
+		text-align: center
+		
+	.fa-angle-up 
+		transform: translate(0, 9px)
+		font-size: 27px
+		font-weight: 900
+		color: #fff
+
+.address 
+	padding-top: 125px
+	padding-bottom: 104px
+	background: #f3f5f8
+	&-headline 
+		padding-bottom: 16px
+	.row 
+		padding-top: 93px
+		.col-md-4>div
+			padding-top: 28px
+			padding-bottom: 12px
+			margin-bottom: 93px
+			background: #fff
+			box-shadow: 0px 3px 0px 0px #f0f2f4
+			transition: all .7s
+			@media screen and (min-width: 768px)
+				&:hover 
+					box-shadow: 0px 3px 0px 0px #3dc9b3
+					transform: translate(0, -20px)
+			h6 
+				padding-top: 10px
+				padding-bottom: 15px
+				color: #3dc9b3
+				text-transform: uppercase
+			address, p 
+				color: #8c9398
+				font-size: 14px
+			.address-email 
+				color: #242830
+	.social a 
+		margin: 5px 10px
+		
+footer 
+	background: #242830
+	&>div 
+		padding-top: 52px
+		padding-bottom: 32px
+		p 
+			letter-spacing: 0.09em
+
+// CAROUSEL STYLES
+.carousel-item
+	margin-bottom: 120px
+.carousel-indicators li 
+	width: 14px
+	height: 14px
+	margin: 0 3.5px
+	border-radius: 50%
+	border: 2px solid #c9cbca
+	transition: all 0.1s
+	cursor: pointer
+.carousel-indicators .active
+	background: #000
+
+// MODAL 
+.modal
+	&-inner 
+		width: 100%
+		height: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) 
+			display: block
+			margin-top: 80px
+	.content
+		position: relative
+	&.show 
+		padding-right: 0!important
+	&-body
+		padding: 0
+		overflow: hidden
+	&-dialog 
+		@media screen and (min-width: 576px)
+			max-width: 960px
+			width: 80%
+	.close 
+		position: absolute
+		top: -20px
+		right: 20px
+		z-index: 1000
+		width: 40px
+		height: 40px
+		background: #0000ff
+		color: #fff
+		cursor: pointer
+		opacity: 1
+		&:hover
+			background: #ff0000
+
+// SLICK SLIDER WIDTH
+.slick-slide
+	width: 390px
+	padding-right: 15px
+	padding-left: 15px
+	img 
+		margin: 0 auto
+.slick-slide.slick-current.click-active
+	padding-left: 0!important
+
+	
+// ANIMATIONS
+@-webkit-keyframes bounceInLeft 
+  0%, 60%, 75%, 90%, 100% 
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000)
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000)
+  
+
+  0% 
+    opacity: 0
+    -webkit-transform: translate3d(-3000px, 0, 0)
+    transform: translate3d(-3000px, 0, 0)
+  
+
+  60% 
+    opacity: 1
+    -webkit-transform: translate3d(25px, 0, 0)
+    transform: translate3d(25px, 0, 0)
+  
+
+  75% 
+    -webkit-transform: translate3d(-10px, 0, 0)
+    transform: translate3d(-10px, 0, 0)
+  
+
+  90% 
+    -webkit-transform: translate3d(5px, 0, 0)
+    transform: translate3d(5px, 0, 0)
+  
+
+  100% 
+    -webkit-transform: none
+    transform: none
+  
+@keyframes bounceInLeft 
+  0%, 60%, 75%, 90%, 100% 
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000)
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000)
+  0% 
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0)
+    transform: translate3d(-3000px, 0, 0)
+  60% 
+    opacity: 1
+    -webkit-transform: translate3d(25px, 0, 0)
+    transform: translate3d(25px, 0, 0)
+  75% 
+    -webkit-transform: translate3d(-10px, 0, 0)
+    transform: translate3d(-10px, 0, 0)
+  90% 
+    -webkit-transform: translate3d(5px, 0, 0)
+    transform: translate3d(5px, 0, 0)
+  100% 
+    -webkit-transform: none
+    transform: none
+  
+.bounceInLeft 
+  -webkit-animation-name: bounceInLeft
+  animation-name: bounceInLeft
+  -webkit-animation-duration: 1s
+  animation-duration: 1s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+  animation-delay: .5s
+
+
