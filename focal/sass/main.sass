@@ -1,0 +1,384 @@
+@import 'base'
+
+// CAROUSEL HERO
+#carousel-hero
+	background: #252830
+	.carousel-item
+		padding-top: 240px
+		padding-bottom: 176px
+		background: url(../images/bg1.jpg)
+		background-size: cover
+		@media screen and (min-width: 992px)
+			padding-top: 300px
+			padding-bottom: 200px
+	.carousel-indicators
+		margin: 0
+		right: 0
+		bottom: 50px
+		cursor: pointer
+		flex-direction: column
+		justify-content: right
+	.carousel-indicators li 
+		margin-left: auto
+		margin-bottom: 9px
+		margin-right: 12px
+		width: 11px
+		height: 11px
+		border-radius: 50%
+		border: 2px solid #fff
+		background: transparent
+		&.active, &:hover 
+			background: #fff
+		&:hover 
+			opacity: .8
+	h1 
+		display: inline-block
+		margin-bottom: 50px
+		border-top: 2px solid #fff
+		border-bottom: 2px solid #fff
+		
+		line-height: 1.4
+		font-size: 60px
+		font-weight: 700
+		color: #fff
+		text-transform: uppercase
+.btn-hero
+	padding: 13px 35px
+	color: #fff
+	&:hover
+		color: #fff
+
+// NAV
+.logo
+	&__text
+		display: inline-block
+		font-size: 30px
+		color: #fff
+.navbar 
+	background: #252e30
+	z-index: 1000
+	// fixing jumping isuue in chrome
+	-webkit-transform: translate3d(0, 0, 0)
+	transform: translate3d(0, 0, 0)
+	&-brand 
+		img 
+			margin-right: 10px
+			margin-bottom: 3px
+	@media screen and (min-width: 992px) and (max-width: 1199px)
+		font-size: 0.8rem
+.nav-item
+	white-space: nowrap
+	@media screen and (min-width: 992px)
+		margin-left: 23px
+	// overwriting bootstrap styles
+.navbar-dark .navbar-nav .nav-link:focus
+	color: #fff
+.navbar-dark .navbar-nav .nav-link:hover
+	color: #2ecc71
+.navbar-dark .navbar-nav .nav-link.active
+	color: #2ecc71
+
+// HOME
+.home 
+	padding-top: 93px
+	padding-bottom: 60px
+
+// ABOUT
+.about 
+	position: relative
+	background: #f2f2f1
+	&__main 
+		padding-top: 93px
+		padding-left: 30px
+		padding-bottom: 65px
+		.col-md-7 
+			position: relative
+			padding-left: 68px
+			margin-top: 18px
+			h3 
+				margin-bottom: 17px
+			.about__icon 
+				display: block
+				position: absolute
+				left: 10px
+			.about__icon_web
+				background: url(../images/icon1.png)
+				width: 41px
+				height: 41px
+			.about__icon_graphic
+				background: url(../images/icon2.png)
+				width: 31px
+				height: 45px
+			.about__icon_market
+				background: url(../images/icon3.png)
+				width: 36px
+				height: 36px
+			.about__icon_seo
+				background: url(../images/icon4.png)
+				width: 37px
+				height: 36px
+.about__design 
+	margin-top: 50px
+.big-img 
+	height: 100%
+	img 
+		display: block
+		width: 100%
+		height: 600px
+	@media screen and (min-width: 992px)
+		position: absolute
+		top: 0
+		right: 64%
+		img 
+			height: 100%
+
+// SKILLS
+.skills 
+	padding-top: 94px
+	padding-bottom: 98px
+.btn-skills, .btn-resume
+	border-color: #2ecc71
+	color: #2ecc71
+	margin-top: 10px
+	position: relative
+	-webkit-transition-property: color
+	transition-property: color
+	// overwriting bootstrap hover styles
+	&:hover 
+		color: #2ecc71
+.btn-skills
+	padding: 12.5px 35px
+	-webkit-transform: perspective(1px) translateZ(0)
+	transform: perspective(1px) translateZ(0)
+	box-shadow: 0 0 1px transparent
+	-webkit-transition-duration: 0.3s
+	transition-duration: 0.3s
+	&:before 
+	  content: ""
+	  position: absolute
+	  z-index: -1
+	  top: 0
+	  left: 0
+	  right: 0
+	  bottom: 0
+	  background: #2ecc71
+	  -webkit-transform: scaleY(0)
+	  transform: scaleY(0)
+	  -webkit-transform-origin: 50% 0
+	  transform-origin: 50% 0
+	  -webkit-transition-property: transform
+	  transition-property: transform
+	  -webkit-transition-duration: 0.3s
+	  transition-duration: 0.3s
+	  -webkit-transition-timing-function: ease-out
+	  transition-timing-function: ease-out
+	&:hover, &:focus, &:active 
+	  color: white
+	&:hover:before, &:focus:before, &:active:before 
+	  -webkit-transform: scaleY(1)
+	  transform: scaleY(1)
+	
+.progress-heading
+	margin-top: 38px
+	margin-bottom: 16px
+
+// RESUME
+.resume 
+	position: relative
+	padding-top: 93px
+	padding-bottom: 100px
+	background: #f2f2f1
+.btn-resume
+	padding: 12.5px 19px
+	-webkit-transform: perspective(1px) translateZ(0)
+	transform: perspective(1px) translateZ(0)
+	box-shadow: 0 0 1px transparent
+	-webkit-transition-duration: 0.3s
+	transition-duration: 0.3s
+	&:before 
+	  content: ""
+	  position: absolute
+	  z-index: -1
+	  top: 0
+	  bottom: 0
+	  left: 0
+	  right: 0
+	  background: #2ecc71
+	  -webkit-transform: scaleX(0)
+	  transform: scaleX(0)
+	  -webkit-transform-origin: 50%
+	  transform-origin: 50%
+	  -webkit-transition-property: transform
+	  transition-property: transform
+	  -webkit-transition-duration: 0.3s
+	  transition-duration: 0.3s
+	  -webkit-transition-timing-function: ease-out
+	  transition-timing-function: ease-out
+	&:hover, &:focus, &:active 
+	  color: white
+	&:hover:before, &:focus:before, &:active:before 
+	  -webkit-transform: scaleX(1)
+	  transform: scaleX(1)
+	
+.triangle 
+	position: absolute
+	bottom: -20px
+	left: calc(50% - 30px)
+	width: 0
+	height: 0
+	border-style: solid
+	border-width: 20px 30px 0 30px
+	border-color: #f2f2f1 transparent transparent transparent
+
+// EDUCATION
+.education 
+	padding-top: 95px
+	.container 
+		padding-bottom: 10px
+.resume-item
+	margin-top: 6px 
+	padding-right: 20px
+	padding-bottom: 32px
+	&_last 
+		padding-bottom: 44px
+	small 
+		display: inline-block
+		margin-top: 16px
+		margin-bottom: 7px
+	p 
+		margin-top: 22px
+.resume-badge
+	display: inline-block
+	width: 70px
+	margin-bottom: 14px
+	background: #2ecc71
+
+	color: #fff 
+	font-size: 14px
+	font-weight: 700
+	line-height: 30px
+	text-align: center
+
+// EXPERIENCE
+.experience 
+	padding-top: 67px
+	padding-bottom: 15px
+
+// TESTIMONIALS 
+.testimonials 
+	padding-top: 93px
+	padding-bottom: 90px
+	background: #f2f2f1
+.feedback 
+	display: block
+	padding-bottom: 30px
+	font-size: 24px
+	line-height: 1.5
+	color: #919191
+.author 
+	font-size: 18px
+	font-weight: 700
+	color: #566366
+	text-transform: uppercase
+
+// carousel with testimonials
+#carousel-testimonials
+	padding-bottom: 32px
+	.carousel-indicators
+		margin: 0 
+		cursor: pointer
+	.carousel-indicators li 
+		width: 11px 
+		height: 11px
+		margin: 0 5px
+		
+		border-radius: 50%
+		border: 2px solid #2ecc71
+		background: transparent
+		&.active, &:hover 
+			background: #2ecc71
+		&:hover 
+			opacity: .5
+
+// PORTFOLIO
+.portfolio 
+	padding-top: 94px
+	padding-bottom: 100px
+
+// CONTACT
+.contact 
+	padding-top: 94px
+	padding-bottom: 100px
+	background: #252e30
+.email, .phone 
+	color: #fff
+	font-size: 18px
+	margin-bottom: 3px
+	a 
+		color: #919191
+.email a 
+		padding-left: 42px
+.phone a 
+	padding-left: 36px
+.form
+	margin-top: 41px
+	&__name, &__email, &__message 
+		display: block
+		width: 100%
+		background: #4b5456
+		border: none
+	&__name, &__email
+		height: 56px
+		padding-left: 20px
+		margin-bottom: 34px
+	&__message 
+		height: 280px
+		padding: 20px
+		resize: none
+		margin-bottom: 40px
+	&__label
+		color: #fff
+		font-size: 18px
+		margin-bottom: 12px
+		span 
+			color: #919191
+.btn-contact 
+	padding: 14.5px 36.5px
+	background: #191f21
+	color: #fff
+	border: none
+	transition: all .3s
+	&:hover 
+		color: #191f21
+		background: #fff
+		
+// FOOTER
+.footer 
+	padding-top: 43px
+	padding-bottom: 47px
+	background: #191f21
+	&__copyright 
+		margin-bottom: 20px
+		font-size: 14px
+		font-weight: 500
+		text-transform: uppercase
+		text-align: center
+.social 
+	display: flex
+	justify-content: center
+	&__link 
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 34px
+		height: 34px
+		margin: 5px
+
+		background: #4b5456
+		color: #191f21
+		border-radius: 50%
+		transition: color 0.2s
+		&:hover 
+			color: #fff
+			text-decoration: none
+			
