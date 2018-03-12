@@ -1,0 +1,111 @@
+@media screen and (min-width: 711px)
+	.maincontent-team-info
+		&::before, &::after 
+		  content: ''
+		  width: 100%
+		  order: 1
+		figure 
+			&:nth-child(n+6)
+				order: 1 
+			&:nth-child(n+11)
+				order: 2
+@media screen and (max-width: 960px) 
+	#aside
+		display: none
+	.maincontent
+		max-width: 960px
+		margin: 0 2%
+		&-gallery
+			display: block
+			img
+				display: block
+				margin: 0 auto
+				&:first-child
+					margin-bottom: 20px
+	.footer-inner
+		&-copyright 
+			margin-right: 1%
+
+@media screen and (max-width: 710px)
+	.header-top
+		display: block
+		&-logo
+			margin: 0 auto 20px
+		&-search 
+			width: 80%
+			margin: 0 auto
+		&-search input[type=text]
+			flex: 1 
+	.header-menu-trigger
+		display: block
+	header nav 
+		display: none
+	.header-nav
+		flex-wrap: wrap
+		li 
+			flex-basis: 150px
+			a 
+				height: 50px
+				padding-top: 15px
+				border: 1px solid #e7e7e7
+	.maincontent 
+		padding-left: 2%
+		padding-right: 2%
+		&>p 
+			font-size: 16px
+	.maincontent-team-info
+		justify-content: space-around
+		figure 
+			flex-basis: 40%
+			margin-right: 0
+			h5, p 
+				font-size: 150%
+				text-align: center
+			img 
+				width: 100%
+				height: auto
+	.footer-inner
+		flex-wrap: wrap
+		text-align: center
+		h4 
+			font-size: 20px
+		p 
+			font-size: 14px
+			line-height: 1.5
+		&-copyright 
+			margin-right: 1%
+		&-logo 
+			margin-right: auto
+		&-copyright, &-feed, &-social, &-sitemap
+			flex: 1 1 100%
+			margin-bottom: 20px
+		.social-flex
+			width: 100%
+		&-sitemap 
+			.sitemap-flex
+				justify-content: space-around
+				a 
+					font-size: 16px
+					line-height: 1.5
+
+@media screen and (max-width: 470px)
+	.maincontent
+		&>p 
+			font-size: 20px
+			text-align: center
+		&-hero 
+			&-quote 
+				font-size: 24px
+		&-gallery-img 
+			width: 100%
+	.maincontent-team-info
+		figure 
+			flex-basis: 80%
+			margin-right: 0
+			h5, p 
+				font-size: 200%
+		
+
+
+
+			

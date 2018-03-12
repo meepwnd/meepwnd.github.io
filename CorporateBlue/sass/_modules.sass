@@ -1,0 +1,318 @@
+//header
+
+.header-top
+	+flex(space-between)
+	padding: 26px 0 22px
+	&-logo
+		width: 161px
+		height: 38px
+		background: url(../images/logo-top.png)
+	&-search
+		display: flex
+		margin-top: 1px
+	&-search input[type=text]
+		height: 32px
+		width: 158px
+		padding-left: 10px
+		background: #f3f3f3
+		color: #8f8f8f
+		border: 1px solid #e7e7e7
+		outline: none
+		&::-webkit-input-placeholder
+			color: #b2b2b2
+		&::-moz-placeholder 
+			color: #b2b2b2
+		&::-ms-input-placeholder 
+			color: #b2b2b2
+		&::-moz-placeholder 
+			color: #b2b2b2
+		&::-moz-placeholder
+			opacity: 1
+	&-search input[type=submit]
+		width: 42px
+		height: 32px
+		background: $main-bg
+		color: #fff
+		font: 15px $secondary-font, sans-serif
+		border: none
+		cursor: pointer
+
+.header-menu-trigger
+	display: none
+	margin-right: 2%
+	cursor: pointer
+	span 
+		display: block
+		height: 5px
+		width: 30px
+		margin: 4px 0
+		background: #b2b2b2
+		
+.header-menu-trigger:hover  span
+	background: #dbdbdb
+
+.header-nav
+	display: flex
+	white-space: nowrap
+	li:hover 
+		border: none
+	li 
+		display: block
+		flex: 1
+		font: 14px $secondary-font, sans-serif
+	&-list 
+		display: block
+		height: 40px
+		padding: 10px 0
+		color: #b2b2b2
+		background: #f3f3f3
+		border-top: 1px solid #e7e7e7
+		border-bottom: 1px solid #e7e7e7
+		letter-spacing: 0.04em
+		text-align: center
+		transition: all 0.2s
+		&.first
+			border-left: 1px solid #e7e7e7
+		&.last 
+			border-right: 1px solid #e7e7e7
+		&:hover, &.current
+			color: #fff
+			background: $main-bg
+			border: none
+.header-title
+	height: 35px
+	margin: 31px 0 29px
+	background: url(../images/bg-1.png)
+	&-heading
+		display: inline-block
+		margin-left: 20px
+		padding: 1px 20px 1px 11px
+		color: #7e7e7e
+		background-image: url('../images/bg.jpg')
+		font: 40px/33px $secondary-font, sans-serif
+		text-transform: uppercase
+		letter-spacing: 0.04em
+		
+
+.menu-expanded
+	display: block
+
+//aside
+
+.aside-menu 
+	.primary-list 
+		background: #f3f3f3
+		border: 1px solid #e7e7e7
+		font-family: Oswald, sans-serif
+		font-weight: 300
+		text-transform: uppercase
+		p 
+			position: relative
+			padding: 10px 0 9px 30px
+			color: #8f8f8f
+			border-bottom: 1px solid #e7e7e7
+			font: 300 14px $secondary-font
+			cursor: pointer
+			&:last-child
+				border: none
+			&::before 
+				content: ""
+				position: absolute
+				left: 11px
+				top: 15px
+				width: 8px
+				height: 8px
+				background: #8f8f8f
+			&:hover 
+				color: #29c5e6
+.aside-map
+	&-heading
+		margin-top: 29px
+		padding: 10px 0 10px 11px
+		color: #fff
+		background: $main-bg
+		font: 14px $secondary-font
+		text-transform: uppercase
+		letter-spacing: 0.04em
+	iframe 
+		border: 10px solid #f3f3f3
+		outline: 1px solid #e7e7e7
+
+.secondary-list 
+	display: none
+	
+.secondary-list li 
+	padding: 7px 0 7px 35px
+	background: #e7e7e7
+	border-bottom: 1px solid #e7e7e7
+	font: 300 12px Oswald, sans-serif
+	cursor: pointer
+
+.secondary-list li:hover 
+	background: #eee;
+
+.secondary-list a 
+	color: #8f8f8f
+	display: block
+	
+.secondary-list a:hover 
+	color: #29c5e6
+
+//maincontent
+
+.main	
+	+flex(space-between)
+.maincontent
+	width: 100%
+	max-width: 680px
+	&-hero 
+		margin-bottom: 15px
+		background: $main-bg
+		&-quote
+			padding: 16px 0 13px 18px
+			color: #fff 
+			font: italic 300 33px/34px $secondary-font, sans-serif
+			text-transform: uppercase
+		&-author
+			padding: 0 35px 12px 0
+			color: #1d8ea6
+			font: 300 20px $secondary-font
+			text-align: right
+	.main-par
+		padding-bottom: 18px
+	&-gallery
+		+flex(space-between)
+		margin-top: 1px
+
+.maincontent-team
+	margin-top: 30px
+	margin-bottom: 30px
+	&-heading
+		margin-bottom: 21px
+		margin-top: 1px
+		padding-left: 8px
+		background: $main-bg
+		color: #fff
+		font: 300 30px/45px $secondary-font
+		letter-spacing: 0.04em
+		text-transform: uppercase
+	&-info
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		&::before, &::after 
+		  content: ''
+		  width: 100%
+		  order: 1
+		figure 
+			margin-bottom: 16px
+			font-family: $secondary-font
+			font-weight: 300
+			h5 
+				padding: 7px 0 5px
+				color: #8f8f8f
+				font-size: 16px
+			p 
+				padding-bottom: 2px
+				color: $main-bg
+				font-size: 14px
+				font-family: $secondary-font
+				font-weight: 300
+						
+//footer
+
+.footer-inner
+	display: flex
+	padding: 12px 0
+	&-feed
+		margin-left: 12px
+		padding-right: 20px
+		flex-basis: 31.25%
+	.time 
+		color: #b4aeae
+		font-size: 11px
+		line-height: 20px
+		text-decoration: underline
+	&-sitemap 
+		margin-left: 2.08333%
+		padding-right: 20px
+		flex-basis: 15.625%
+		.sitemap-flex
+			+flex(space-between)
+		a 
+			color: $footer-color
+			font: 12px/20px $main-font
+			text-transform: capitalize
+			&:hover
+				text-decoration: underline
+	&-social
+		margin-left: 2.08333%
+		padding-right: 20px
+		flex-basis: 150px
+		.social-flex 
+			padding-top: 8px
+			padding-right: 20px
+			+flex(space-between)
+			flex-wrap: wrap
+			width: 130px
+		.twitter
+			display: inline-block
+			margin-right: 4px
+			margin-bottom: 7px
+			width: 30px
+			height: 31px
+			background: url(../images/spritesheet.png)
+			background-repeat: no-repeat
+			background-position: -119px -1px
+		.facebook
+			@extend .twitter
+			background-position: -1px -1px
+		.google
+			@extend .twitter
+			background-position: -51px -1px
+		.vimeo
+			@extend .twitter
+			width: 16px
+			height: 16px
+			background-position: -151px -1px
+		.youtube
+			@extend .vimeo
+			background-position: -169px -1px
+		.flickr
+			@extend .vimeo
+			background-position: -33px -1px
+		.instagram
+			@extend .vimeo
+			background-position: -83px -1px
+		.rss
+			@extend .vimeo
+			background-position: -101px -1px
+	&-copyright
+		display: flex
+		flex-direction: column
+		margin-top: 18px
+		margin-left: auto		
+	h4
+		margin-bottom: 4px
+		color: #fff
+		border-bottom: 1px solid #919191
+		font: 14px $secondary-font
+		text-transform: uppercase
+		letter-spacing: 0.04em
+	p 
+		color: $footer-color
+		font: 11px/14px $main-font
+	&-logo
+		margin-bottom: 10px
+		margin-left: auto
+		width: 161px
+		height: 38px
+		background: url(../images/logo-footer.png)
+	&-copy 
+		font: 10px $main-font !important
+		.creator
+			color: $footer-color
+			text-decoration: underline
+			text-transform: lowercase
+
+
