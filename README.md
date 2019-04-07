@@ -1,2 +1,2 @@
 # meepwnd.github.io
-repository for sample websites, made with HTML5, CSS3 and jQuery
+repository for sample webpages made with pure HTML5/CSS3 or Bootstrap and jQuery
