@@ -1,5 +1,5 @@
 # meepwnd.github.io
-repository for sample webpages made with pure HTML5/CSS3 or Bootstrap and jQuery
+repository for sample webpages made with pure HTML5/CSS3 or Bootstrap and jQuery 
 
 Demos: 
 https://meepwnd.github.io/CorporateBlue/
